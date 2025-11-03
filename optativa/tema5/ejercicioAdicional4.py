@@ -15,4 +15,5 @@ numero = int(input("Dime el número de veces que quieres que rote la lista"))
 
 lista = [3,2,5,7]
 
-print(lista, "la lista rotada sería", rota(numero,lista))
+print("la lista rotada sería", rota(numero,lista))
+
