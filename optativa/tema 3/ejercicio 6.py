@@ -10,5 +10,7 @@ contador = 1
 for i in range(fila):  # Bucle externo: recorre las filas
     for j in range(columna):  # Bucle interno: recorre las columnas
         print(f"{contador:4}", end=" ")  # Imprime el número con espacio fijo
-        contador += 1  # Aumentamos el contador en 1
+        contador += 2  # Aumentamos el contador en 1
+        if contador == 99:
+            contador=1
     print()  # Hace un salto de línea después de cada fila

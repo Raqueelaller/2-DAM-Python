@@ -2,7 +2,7 @@
 devuelva dicho valor.'''
 def contadorPalabras(texto:str) -> int:
     texto = texto.strip()#quita los espacions iniciales y finales
-    partes = texto.split() #separa la cadena de texto en palabras
+    partes = texto.split().count() #separa la cadena de texto en palabras
 
     palabras=[] 
     for palabra in partes:
