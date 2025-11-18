@@ -34,7 +34,11 @@ while bandera == False:
 
         case "c":
             nombre = str(input("dime el nombre de la persona que quieres introducir: "))
-            numero = int(input("dime su número de teléfono: "))
+            try :
+                numero = int(input("dime su número de teléfono: "))
+            except ValueError:
+                print("Error: No has introducido un número válido")
+
             if nombre in agenda:
                 print("¡Esa persona ya existe!")
             else:
